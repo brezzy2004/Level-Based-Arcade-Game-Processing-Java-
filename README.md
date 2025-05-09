@@ -57,6 +57,6 @@ A fun, level-based arcade game developed using the Processing IDE. The player co
 - Pause and resume functionality
 
 ## 👤 Author
-*Your Name* – Computer Engineering Student  
+Bilal Khan – Computer Engineering Student  
 Created as an academic/personal project to showcase game development and design skills.
 
