@@ -1,47 +1,62 @@
-# Snack Collector Game – Processing Arcade Game
+# ☕ Snack Collector Cup Game – A Processing Arcade Project
 
 ## 🎮 Overview
-This is a level-based 2D arcade game developed using the Processing IDE (Java-based). The player controls a character who must collect falling snacks while avoiding trash and enemy crows. The game gets progressively harder with each level, increasing both the speed and number of falling items.
+A fun, level-based arcade game developed using the Processing IDE. The player controls a **cup** to catch delicious falling treats — **croissants**, **chocolates**, and **marshmallows** — while **avoiding trash** and a flying **hand glove**. The game increases in difficulty with each level, adding speed and complexity to the falling items.
 
-## 🕹️ Game Features
-- **Player Movement**: Use arrow keys to move left, right, up, and down.
-- **Food Collection**: Catch falling snacks to increase score.
-- **Avoid Obstacles**:
-  - **Trash**: Reduces score when collected.
-  - **Crows**: Deduct lives or cause game over on collision.
-- **Multiple Levels**: Difficulty increases with each level (items fall faster).
-- **Screen Transitions**: Includes start screen, gameplay, and game-over screens.
-- **Score & Life Tracking**: Displays current score and remaining lives.
+## 🕹️ Gameplay Features
+- **Player Character**:  
+  - A **cup** controlled via arrow keys (← ↑ ↓ →).
+- **Items to Collect**:
+  - 🥐 Croissants  
+  - 🍫 Chocolates  
+  - ☁️ Marshmallows  
+- **Obstacles to Avoid**:
+  - 🗑️ **Trash Items**: Reduce score when collected.  
+  - 🧤 **Hand Glove**: Deducts a life on collision.
+- **Game Flow**:
+  - Start with limited lives.
+  - Gain points by collecting treats.
+  - Lose points or lives by catching trash or hitting gloves.
+  - Advance to higher levels where items fall faster.
+- **Game Screens**:
+  - Start Screen
+  - Gameplay Screen
+  - Game Over Screen
 
 ## ⚙️ Technologies Used
 - **Processing IDE (Java-based)**
-- Object-Oriented Programming (for managing player, items, enemies)
-- Frame-based animation and game loop logic
+- Object-Oriented Programming for modular game element design
+- Frame-based game loop and real-time input handling
 
 ## 🧠 Concepts Practiced
-- Collision Detection  
-- Game State Management  
-- Custom Classes and Encapsulation  
-- Real-time Input Handling
+- Collision Detection for treats, trash, and glove  
+- Game State Management (Start, Game, Game Over)  
+- Level Scaling with increasing item speed  
+- Encapsulation using custom classes (Cup, Item, Glove, Trash)
 
-## 📂 File Structure
-- `MainGame.pde` – Main file controlling game flow and setup
-- `Player.pde` – Handles player logic and movement
-- `Food.pde` – Handles food items
-- `Trash.pde` – Handles trash behavior
-- `handGlove.pde` – Enemy logic and movement
-- `ScreenManager.pde` – Controls screen transitions
+## 📁 File Structure
+- `MainGame.pde` – Controls setup, draw loop, and level logic  
+- `Cup.pde` – Handles player logic  
+- `FoodItem.pde` – Parent class for croissant, chocolate, marshmallow  
+- `Trash.pde` – Trash item behavior  
+- `Glove.pde` – Glove enemy logic  
+- `GameScreen.pde` – Manages different game states/screens
 
-## ✅ How to Run
-1. Open the project in Processing IDE.
-2. Click the **Run** button.
-3. Use arrow keys to control the player and start playing!
+## ✅ How to Play
+1. Open the sketch in **Processing IDE**.
+2. Press **Run**.
+3. Use **arrow keys** to move the cup.
+4. **Collect** only the treats.
+5. **Avoid** trash and glove to stay alive.
+6. Survive and score high across increasingly harder levels.
 
-## 📝 Future Improvements
-- Add background music and sound effects.
-- Introduce power-ups or new enemy types.
-- Implement a leaderboard or high-score tracker.
+## 🌟 Future Features
+- Power-ups (e.g., slow motion, extra life)
+- Background sound effects and music
+- Animated item effects
+- Pause and resume functionality
 
 ## 👤 Author
-*Your Name* – Undergraduate Computer Engineering Student  
-For academic or portfolio use.
+*Your Name* – Computer Engineering Student  
+Created as an academic/personal project to showcase game development and design skills.
+
